@@ -17,7 +17,7 @@
 		C472D846285BBFA60082244A /* DeviceLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D845285BBFA60082244A /* DeviceLookup.swift */; };
 		C472D84F285BDFA60082244A /* MainToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D84D285BDFA60082244A /* MainToolbar.swift */; };
 		C475973128A71BEC00D1D029 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C475973028A71BEC00D1D029 /* CaptureButton.swift */; };
-		C47C99C32CA1C6BB00B5338B /* AVCamCaptureExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C47C99BA2CA1C6BB00B5338B /* AVCamCaptureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C47C99C32CA1C6BB00B5338B /* c2pa-camCaptureExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C47C99BA2CA1C6BB00B5338B /* c2pa-camCaptureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C48091852BD584AD00753C4A /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48091832BD584AD00753C4A /* CameraModel.swift */; };
 		C480918B2BD59D7D00753C4A /* SPCObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48091892BD59D7D00753C4A /* SPCObserver.swift */; };
 		C4A349DF28BD4B700056FAAF /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A349DE28BD4B700056FAAF /* SwitchCameraButton.swift */; };
@@ -53,7 +53,7 @@
 		C4C686232892E33E0038EDE1 /* RecordingTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C686222892E33E0038EDE1 /* RecordingTimeView.swift */; };
 		C4C6E1FD2CA1CF250081A8EA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C6E1FC2CA1CF250081A8EA /* WidgetKit.framework */; };
 		C4C6E1FF2CA1CF250081A8EA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C6E1FE2CA1CF250081A8EA /* SwiftUI.framework */; };
-		C4C6E20A2CA1CF270081A8EA /* AVCamControlCenterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4C6E1FA2CA1CF250081A8EA /* AVCamControlCenterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4C6E20A2CA1CF270081A8EA /* c2pa-camControlCenterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4C6E1FA2CA1CF250081A8EA /* c2pa-camControlCenterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C4C6E2112CA1CF860081A8EA /* AVCamCaptureIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6E2102CA1CF860081A8EA /* AVCamCaptureIntent.swift */; };
 		C4C6E2142CA1D01A0081A8EA /* AVCamCaptureIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6E2102CA1CF860081A8EA /* AVCamCaptureIntent.swift */; };
 		C4C6E2152CA1D01A0081A8EA /* AVCamCaptureIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6E2102CA1CF860081A8EA /* AVCamCaptureIntent.swift */; };
@@ -99,7 +99,7 @@
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				C47C99C32CA1C6BB00B5338B /* AVCamCaptureExtension.appex in Embed ExtensionKit Extensions */,
+				C47C99C32CA1C6BB00B5338B /* c2pa-camCaptureExtension.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +110,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C4C6E20A2CA1CF270081A8EA /* AVCamControlCenterExtension.appex in Embed Foundation Extensions */,
+				C4C6E20A2CA1CF270081A8EA /* c2pa-camControlCenterExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,9 +118,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		7710E8B4E5AEBAFE7C73EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B92404E334D9008D3705950F /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		B92404E334D9008D3705950F /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C400F45E28DFD8AC00861093 /* ThumbnailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailButton.swift; sourceTree = "<group>"; };
 		C400F46228DFDAB700861093 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		C424961E2889CDC400C05256 /* CaptureModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureModeView.swift; sourceTree = "<group>"; };
@@ -130,13 +130,13 @@
 		C472D845285BBFA60082244A /* DeviceLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLookup.swift; sourceTree = "<group>"; };
 		C472D84D285BDFA60082244A /* MainToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainToolbar.swift; sourceTree = "<group>"; };
 		C475973028A71BEC00D1D029 /* CaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
-		C47C99BA2CA1C6BB00B5338B /* AVCamCaptureExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = AVCamCaptureExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47C99BA2CA1C6BB00B5338B /* c2pa-camCaptureExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = "c2pa-camCaptureExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48091832BD584AD00753C4A /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		C48091892BD59D7D00753C4A /* SPCObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCObserver.swift; sourceTree = "<group>"; };
 		C4A349DE28BD4B700056FAAF /* SwitchCameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
 		C4A73C9F2CC0748800C2FA84 /* CameraState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraState.swift; sourceTree = "<group>"; };
 		C4C686222892E33E0038EDE1 /* RecordingTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingTimeView.swift; sourceTree = "<group>"; };
-		C4C6E1FA2CA1CF250081A8EA /* AVCamControlCenterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AVCamControlCenterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C6E1FA2CA1CF250081A8EA /* c2pa-camControlCenterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "c2pa-camControlCenterExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C6E1FC2CA1CF250081A8EA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		C4C6E1FE2CA1CF250081A8EA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		C4C6E2102CA1CF860081A8EA /* AVCamCaptureIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCamCaptureIntent.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		C4EA0DBF2891EFC20085A584 /* MovieCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCapture.swift; sourceTree = "<group>"; };
 		C4EA0DC22891F2F80085A584 /* CaptureExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureExtensions.swift; sourceTree = "<group>"; };
 		C4EA0DCA289205C10085A584 /* FeatureToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureToolbar.swift; sourceTree = "<group>"; };
-		C4F82C99285ADDA2005D427A /* AVCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F82C99285ADDA2005D427A /* c2pa-cam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "c2pa-cam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F82C9C285ADDA2005D427A /* AVCamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCamApp.swift; sourceTree = "<group>"; };
 		C4F82CA0285ADDA3005D427A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4F82CA4285ADDA3005D427A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -165,14 +165,14 @@
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = C47C99B92CA1C6BB00B5338B /* AVCamCaptureExtension */;
+			target = C47C99B92CA1C6BB00B5338B /* c2pa-camCaptureExtension */;
 		};
 		C4C6E20E2CA1CF270081A8EA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = C4C6E1F92CA1CF250081A8EA /* AVCamControlCenterExtension */;
+			target = C4C6E1F92CA1CF250081A8EA /* c2pa-camControlCenterExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -342,9 +342,9 @@
 		C4F82C9A285ADDA2005D427A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4F82C99285ADDA2005D427A /* AVCam.app */,
-				C47C99BA2CA1C6BB00B5338B /* AVCamCaptureExtension.appex */,
-				C4C6E1FA2CA1CF250081A8EA /* AVCamControlCenterExtension.appex */,
+				C4F82C99285ADDA2005D427A /* c2pa-cam.app */,
+				C47C99BA2CA1C6BB00B5338B /* c2pa-camCaptureExtension.appex */,
+				C4C6E1FA2CA1CF250081A8EA /* c2pa-camControlCenterExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -381,15 +381,14 @@
 				B92404E334D9008D3705950F /* LICENSE.txt */,
 			);
 			name = LICENSE;
-			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C47C99B92CA1C6BB00B5338B /* AVCamCaptureExtension */ = {
+		C47C99B92CA1C6BB00B5338B /* c2pa-camCaptureExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C47C99C82CA1C6BB00B5338B /* Build configuration list for PBXNativeTarget "AVCamCaptureExtension" */;
+			buildConfigurationList = C47C99C82CA1C6BB00B5338B /* Build configuration list for PBXNativeTarget "c2pa-camCaptureExtension" */;
 			buildPhases = (
 				C47C99B62CA1C6BB00B5338B /* Sources */,
 				C47C99B72CA1C6BB00B5338B /* Frameworks */,
@@ -402,14 +401,14 @@
 			fileSystemSynchronizedGroups = (
 				C47C99BB2CA1C6BB00B5338B /* AVCamCaptureExtension */,
 			);
-			name = AVCamCaptureExtension;
+			name = "c2pa-camCaptureExtension";
 			productName = AVCamCaptureExtension;
-			productReference = C47C99BA2CA1C6BB00B5338B /* AVCamCaptureExtension.appex */;
+			productReference = C47C99BA2CA1C6BB00B5338B /* c2pa-camCaptureExtension.appex */;
 			productType = "com.apple.product-type.extensionkit-extension";
 		};
-		C4C6E1F92CA1CF250081A8EA /* AVCamControlCenterExtension */ = {
+		C4C6E1F92CA1CF250081A8EA /* c2pa-camControlCenterExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4C6E20F2CA1CF270081A8EA /* Build configuration list for PBXNativeTarget "AVCamControlCenterExtension" */;
+			buildConfigurationList = C4C6E20F2CA1CF270081A8EA /* Build configuration list for PBXNativeTarget "c2pa-camControlCenterExtension" */;
 			buildPhases = (
 				C4C6E1F62CA1CF250081A8EA /* Sources */,
 				C4C6E1F72CA1CF250081A8EA /* Frameworks */,
@@ -422,14 +421,14 @@
 			fileSystemSynchronizedGroups = (
 				C4C6E2002CA1CF250081A8EA /* AVCamControlCenterExtension */,
 			);
-			name = AVCamControlCenterExtension;
+			name = "c2pa-camControlCenterExtension";
 			productName = AVCamControlCenterExtensionExtension;
-			productReference = C4C6E1FA2CA1CF250081A8EA /* AVCamControlCenterExtension.appex */;
+			productReference = C4C6E1FA2CA1CF250081A8EA /* c2pa-camControlCenterExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		C4F82C98285ADDA2005D427A /* AVCam */ = {
+		C4F82C98285ADDA2005D427A /* c2pa-cam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4F82CBE285ADDA4005D427A /* Build configuration list for PBXNativeTarget "AVCam" */;
+			buildConfigurationList = C4F82CBE285ADDA4005D427A /* Build configuration list for PBXNativeTarget "c2pa-cam" */;
 			buildPhases = (
 				C4F82C95285ADDA2005D427A /* Sources */,
 				C4F82C96285ADDA2005D427A /* Frameworks */,
@@ -443,9 +442,9 @@
 				C47C99C22CA1C6BB00B5338B /* PBXTargetDependency */,
 				C4C6E2092CA1CF270081A8EA /* PBXTargetDependency */,
 			);
-			name = AVCam;
+			name = "c2pa-cam";
 			productName = AVCam;
-			productReference = C4F82C99285ADDA2005D427A /* AVCam.app */;
+			productReference = C4F82C99285ADDA2005D427A /* c2pa-cam.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -457,7 +456,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				DefaultBuildSystemTypeForWorkspace = Latest;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1700;
+				LastUpgradeCheck = 2600;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					C47C99B92CA1C6BB00B5338B = {
@@ -471,7 +470,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4F82C94285ADDA2005D427A /* Build configuration list for PBXProject "AVCam" */;
+			buildConfigurationList = C4F82C94285ADDA2005D427A /* Build configuration list for PBXProject "c2pa-cam" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -484,9 +483,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4F82C98285ADDA2005D427A /* AVCam */,
-				C47C99B92CA1C6BB00B5338B /* AVCamCaptureExtension */,
-				C4C6E1F92CA1CF250081A8EA /* AVCamControlCenterExtension */,
+				C4F82C98285ADDA2005D427A /* c2pa-cam */,
+				C47C99B92CA1C6BB00B5338B /* c2pa-camCaptureExtension */,
+				C4C6E1F92CA1CF250081A8EA /* c2pa-camControlCenterExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -604,12 +603,12 @@
 /* Begin PBXTargetDependency section */
 		C47C99C22CA1C6BB00B5338B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C47C99B92CA1C6BB00B5338B /* AVCamCaptureExtension */;
+			target = C47C99B92CA1C6BB00B5338B /* c2pa-camCaptureExtension */;
 			targetProxy = C47C99C12CA1C6BB00B5338B /* PBXContainerItemProxy */;
 		};
 		C4C6E2092CA1CF270081A8EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C4C6E1F92CA1CF250081A8EA /* AVCamControlCenterExtension */;
+			target = C4C6E1F92CA1CF250081A8EA /* c2pa-camControlCenterExtension */;
 			targetProxy = C4C6E2082CA1CF270081A8EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -621,9 +620,11 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W36S8KLY7S;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -633,17 +634,18 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AVCam uses your location to tag where photos and videos are taken.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To record audio for Live Photos and videos.";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}.AVCamCaptureExtension";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netzarchitekten.c2pa-cam.CaptureExt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "c2pa-cam CaptureExt dev";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -663,9 +665,11 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W36S8KLY7S;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -675,17 +679,18 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AVCam uses your location to tag where photos and videos are taken.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To record audio for Live Photos and videos.";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}.AVCamCaptureExtension";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netzarchitekten.c2pa-cam.CaptureExt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "c2pa-cam CaptureExt dev";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -707,26 +712,29 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W36S8KLY7S;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AVCamControlCenterExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AVCamControlCenterExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}.AVCamControlCenterExtension";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netzarchitekten.c2pa-cam.ControlCenterExt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "c2pa-cam ControlCenterExt dev";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -748,26 +756,29 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W36S8KLY7S;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AVCamControlCenterExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AVCamControlCenterExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}.AVCamControlCenterExtension";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netzarchitekten.c2pa-cam.ControlCenterExt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "c2pa-cam ControlCenterExt dev";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -913,11 +924,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AVCam/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W36S8KLY7S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -934,13 +947,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netzarchitekten.c2pa-cam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "c2pa-cam dev";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -960,11 +974,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AVCam/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W36S8KLY7S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -981,13 +997,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netzarchitekten.c2pa-cam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "c2pa-cam dev";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1003,7 +1020,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C47C99C82CA1C6BB00B5338B /* Build configuration list for PBXNativeTarget "AVCamCaptureExtension" */ = {
+		C47C99C82CA1C6BB00B5338B /* Build configuration list for PBXNativeTarget "c2pa-camCaptureExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C47C99C52CA1C6BB00B5338B /* Debug */,
@@ -1012,7 +1029,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4C6E20F2CA1CF270081A8EA /* Build configuration list for PBXNativeTarget "AVCamControlCenterExtension" */ = {
+		C4C6E20F2CA1CF270081A8EA /* Build configuration list for PBXNativeTarget "c2pa-camControlCenterExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4C6E20C2CA1CF270081A8EA /* Debug */,
@@ -1021,7 +1038,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4F82C94285ADDA2005D427A /* Build configuration list for PBXProject "AVCam" */ = {
+		C4F82C94285ADDA2005D427A /* Build configuration list for PBXProject "c2pa-cam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4F82CBC285ADDA4005D427A /* Debug */,
@@ -1030,7 +1047,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4F82CBE285ADDA4005D427A /* Build configuration list for PBXNativeTarget "AVCam" */ = {
+		C4F82CBE285ADDA4005D427A /* Build configuration list for PBXNativeTarget "c2pa-cam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4F82CBF285ADDA4005D427A /* Debug */,
