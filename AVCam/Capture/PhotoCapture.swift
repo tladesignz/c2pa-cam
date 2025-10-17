@@ -123,7 +123,7 @@ final class PhotoCapture: OutputService {
         photoOutput.maxPhotoQualityPrioritization = .quality
         photoOutput.isResponsiveCaptureEnabled = photoOutput.isResponsiveCaptureSupported
         photoOutput.isFastCapturePrioritizationEnabled = photoOutput.isFastCapturePrioritizationSupported
-        photoOutput.isAutoDeferredPhotoDeliveryEnabled = photoOutput.isAutoDeferredPhotoDeliverySupported
+        photoOutput.isAutoDeferredPhotoDeliveryEnabled = false
         updateCapabilities(for: device)
     }
     
@@ -147,8 +147,9 @@ private class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
     private var isProxyPhoto = false
     
     private var photoData: Data?
+    private var timestamp: CMTime?
     private var livePhotoMovieURL: URL?
-    
+
     /// A stream of capture activity values that indicate the current state of progress.
     let activityStream: AsyncStream<CaptureActivity>
     private let activityContinuation: AsyncStream<CaptureActivity>.Continuation
@@ -184,16 +185,18 @@ private class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
         }
         livePhotoMovieURL = outputFileURL
     }
-    
-    func photoOutput(_ output: AVCapturePhotoOutput, didFinishCapturingDeferredPhotoProxy deferredPhotoProxy: AVCaptureDeferredPhotoProxy?, error: Error?) {
-        if let error = error {
-            logger.debug("Error capturing deferred photo: \(error)")
-            return
-        }
-        // Capture the data for this photo.
-        photoData = deferredPhotoProxy?.fileDataRepresentation()
-        isProxyPhoto = true
-    }
+
+// DISABLED: We don't want photo proxies, as we want c2pa-ios to operate on the final image.
+//
+//    func photoOutput(_ output: AVCapturePhotoOutput, didFinishCapturingDeferredPhotoProxy deferredPhotoProxy: AVCaptureDeferredPhotoProxy?, error: Error?) {
+//        if let error = error {
+//            logger.debug("Error capturing deferred photo: \(error)")
+//            return
+//        }
+//        // Capture the data for this photo.
+//        photoData = deferredPhotoProxy?.fileDataRepresentation()
+//        isProxyPhoto = true
+//    }
     
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let error = error {
@@ -201,6 +204,7 @@ private class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
             return
         }
         photoData = photo.fileDataRepresentation()
+        timestamp = photo.timestamp
     }
     
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {
@@ -217,13 +221,15 @@ private class PhotoCaptureDelegate: NSObject, AVCapturePhotoCaptureDelegate {
         }
         
         // If the app captures no photo data, resume the continuation by throwing an error, and return.
-        guard let photoData else {
+        guard let photoData, let timestamp
+        else {
             continuation.resume(throwing: PhotoCaptureError.noPhotoData)
             return
         }
         
         /// Create a photo object to save to the `MediaLibrary`.
-        let photo = Photo(data: photoData, isProxy: isProxyPhoto, livePhotoMovieURL: livePhotoMovieURL)
+        let photo = Photo(data: photoData, isProxy: isProxyPhoto,
+                          livePhotoMovieURL: livePhotoMovieURL, timestamp: timestamp)
         // Resume the continuation by returning the captured photo.
         continuation.resume(returning: photo)
     }

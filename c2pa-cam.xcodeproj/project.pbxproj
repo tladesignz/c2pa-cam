@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03D9E702EA24356000AD4BE /* C2pa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D9E6F2EA24356000AD4BE /* C2pa.swift */; };
+		A03D9E712EA24356000AD4BE /* C2pa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D9E6F2EA24356000AD4BE /* C2pa.swift */; };
+		A0B3CE822E96774700F2F938 /* C2PA in Frameworks */ = {isa = PBXBuildFile; productRef = A0B3CE812E96774700F2F938 /* C2PA */; };
+		A0E116142E867E4A000EB2D0 /* C2PA in Frameworks */ = {isa = PBXBuildFile; productRef = A0E116132E867E4A000EB2D0 /* C2PA */; };
 		C400F46128DFD8AC00861093 /* ThumbnailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400F45E28DFD8AC00861093 /* ThumbnailButton.swift */; };
 		C400F46328DFDAB700861093 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400F46228DFDAB700861093 /* FoundationExtensions.swift */; };
 		C40A95B92CC9A91A00A02AF1 /* CameraState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A73C9F2CC0748800C2FA84 /* CameraState.swift */; };
@@ -120,6 +124,7 @@
 /* Begin PBXFileReference section */
 		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		7710E8B4E5AEBAFE7C73EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A03D9E6F2EA24356000AD4BE /* C2pa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C2pa.swift; sourceTree = "<group>"; };
 		B92404E334D9008D3705950F /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C400F45E28DFD8AC00861093 /* ThumbnailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailButton.swift; sourceTree = "<group>"; };
 		C400F46228DFDAB700861093 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
@@ -177,6 +182,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A0BA993E2E9912F200D0622A /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
 		C47C99BB2CA1C6BB00B5338B /* AVCamCaptureExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C47C99C72CA1C6BB00B5338B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = AVCamCaptureExtension; sourceTree = "<group>"; };
 		C4C6E2002CA1CF250081A8EA /* AVCamControlCenterExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C4C6E20E2CA1CF270081A8EA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = AVCamControlCenterExtension; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -186,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B3CE822E96774700F2F938 /* C2PA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E116142E867E4A000EB2D0 /* C2PA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,10 +364,12 @@
 				C48091832BD584AD00753C4A /* CameraModel.swift */,
 				C4F82CCB285AE206005D427A /* CaptureService.swift */,
 				C4E15AAE2898620E00827683 /* CameraView.swift */,
+				A03D9E6F2EA24356000AD4BE /* C2pa.swift */,
 				C47390512BC3464500EC7B9D /* Capture */,
 				C470F0EF2899E2FB004D4515 /* Model */,
 				C472D847285BD4A40082244A /* Views */,
 				C4EA0DC12891F2D60085A584 /* Support */,
+				A0BA993E2E9912F200D0622A /* Resources */,
 				C4F82CA0285ADDA3005D427A /* Assets.xcassets */,
 				C4F82CA3285ADDA3005D427A /* Preview Content */,
 			);
@@ -442,6 +452,9 @@
 				C47C99C22CA1C6BB00B5338B /* PBXTargetDependency */,
 				C4C6E2092CA1CF270081A8EA /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				A0BA993E2E9912F200D0622A /* Resources */,
+			);
 			name = "c2pa-cam";
 			productName = AVCam;
 			productReference = C4F82C99285ADDA2005D427A /* c2pa-cam.app */;
@@ -479,6 +492,9 @@
 				Base,
 			);
 			mainGroup = C4F82C90285ADDA2005D427A;
+			packageReferences = (
+				A0E116122E867E4A000EB2D0 /* XCLocalSwiftPackageReference "../c2pa-ios" */,
+			);
 			productRefGroup = C4F82C9A285ADDA2005D427A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -531,6 +547,7 @@
 				C4C553212CA1D5A3005D940C /* PhotoCapture.swift in Sources */,
 				C4C553222CA1D5A3005D940C /* PreviewCameraModel.swift in Sources */,
 				C4C553232CA1D5A3005D940C /* CameraPreview.swift in Sources */,
+				A03D9E712EA24356000AD4BE /* C2pa.swift in Sources */,
 				C4A73CA02CC0748800C2FA84 /* CameraState.swift in Sources */,
 				C4C553242CA1D5A3005D940C /* FeatureToolbar.swift in Sources */,
 				C4C553252CA1D5A3005D940C /* DataTypes.swift in Sources */,
@@ -577,6 +594,7 @@
 				C4F82CCC285AE206005D427A /* CaptureService.swift in Sources */,
 				C4F82C9D285ADDA2005D427A /* AVCamApp.swift in Sources */,
 				C4EA0DCB289205C10085A584 /* FeatureToolbar.swift in Sources */,
+				A03D9E702EA24356000AD4BE /* C2pa.swift in Sources */,
 				C472D84F285BDFA60082244A /* MainToolbar.swift in Sources */,
 				C4A73CA12CC0748800C2FA84 /* CameraState.swift in Sources */,
 				C4C6E2112CA1CF860081A8EA /* AVCamCaptureIntent.swift in Sources */,
@@ -1057,6 +1075,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A0E116122E867E4A000EB2D0 /* XCLocalSwiftPackageReference "../c2pa-ios" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../c2pa-ios";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0B3CE812E96774700F2F938 /* C2PA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0E116122E867E4A000EB2D0 /* XCLocalSwiftPackageReference "../c2pa-ios" */;
+			productName = C2PA;
+		};
+		A0E116132E867E4A000EB2D0 /* C2PA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = C2PA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4F82C91285ADDA2005D427A /* Project object */;
 }

@@ -125,13 +125,14 @@ final class CameraModel: Camera {
     func capturePhoto() async {
         do {
             let photoFeatures = PhotoFeatures(isLivePhotoEnabled: isLivePhotoEnabled, qualityPrioritization: qualityPrioritization)
-            let photo = try await captureService.capturePhoto(with: photoFeatures)
+            let photo = C2pa.shared.sign(try await captureService.capturePhoto(with: photoFeatures))
+
             try await mediaLibrary.save(photo: photo)
         } catch {
             self.error = error
         }
     }
-    
+
     /// A Boolean value that indicates whether to capture Live Photos when capturing stills.
     var isLivePhotoEnabled = true {
         didSet {
@@ -180,7 +181,7 @@ final class CameraModel: Camera {
         case .movieCapture:
             do {
                 // If currently recording, stop the recording and write the movie to the library.
-                let movie = try await captureService.stopRecording()
+                let movie = C2pa.shared.sign(try await captureService.stopRecording())
                 try await mediaLibrary.save(movie: movie)
             } catch {
                 self.error = error

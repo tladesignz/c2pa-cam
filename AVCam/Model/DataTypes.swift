@@ -85,6 +85,7 @@ struct Photo: Sendable {
     let data: Data
     let isProxy: Bool
     let livePhotoMovieURL: URL?
+    let timestamp: CMTime
 }
 
 /// A structure that contains the uniform type identifier and movie URL.
